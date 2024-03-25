@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+*{
+    font-family: "Tauri", sans-serif;
+}
+body{
+    background-color: #212121;
+}
+.card{
+    position: relative;
+    margin-top: 12%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.circle{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 10% 20%, rgb(239, 153, 237) 0%, rgb(235, 163, 249) 32.2%, rgb(253, 200, 200) 90%);
+
+}
+.c1{
+    position: absolute;
+    top: 17%;
+    left: 33%;
+}
+.c2{
+    position: absolute;
+    top: 35%;
+    right: 30%;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+ }
+
+.card_front,.card_back{
+    padding: 10px;
+    backface-visibility: hidden;
+    transition: all .4s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(54, 54, 54, 0.685);
+    width: 350px;
+    cursor: pointer;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 25%;
+    border-radius: 15px;
+    left: 40%;
+    color: white;
+}
+.card_back{
+    transform: rotateY(180deg);
+}
+.logo,.v_logo{
+    padding: 5px;
+    border-radius: 2px;
+    width: 40px;
+    background-color: white;
+}
+
+.visa_logo{
+    width: 36px;
+}
+
+.chip{
+    position: absolute;
+    top: 6.7px;
+    right: 12px;
+}
+.chip_logo{
+    width: 32px;
+}
+
+.number{
+    margin-top: 44px;
+}
+.card_number{
+    font-size: 20px;
+}
+.holder{
+    margin-top: 40px;
+    height: 100px;
+    display: inline-block;
+}
+.holder_card{
+    display: block;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+.holder_name{
+    font-size: 17px;
+}
+
+.valid_till{
+    font-size: 9px;
+}
+.valid{
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+}
+.date{
+    margin-top: 4px;
+}
+
+.back{
+    position: absolute;
+    width: 94.5%;
+    height: 91%;
+    top: 10px;
+    backface-visibility: hidden;
+}
+.black{
+    font-size: 8px;
+    width: 100%;
+    height: 30px;
+    background-color: #212121;
+    margin-top: 6%;
+}
+
+.bg{
+    background-color: white;
+    height: 20px;
+    width: 85%;
+    margin: 20px 20px;
+    display: flex;
+    color: black;
+    padding: 5px;
+}
+.style{
+    background-color: antiquewhite;
+    width: 89%;
+    height: 100%;
+}
+.cvv{
+    position: absolute;
+    right: 37px;
+}
+
+.tex{
+    width: 80%;
+
+}
+.text{
+    font-size: 9px;
+}
+
+.v_logo{
+    position: absolute;
+    right: 12px;
+}
